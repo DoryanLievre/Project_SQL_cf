@@ -20,19 +20,11 @@ SELECT * FROM users WHERE mail = "Philippe@coding.fr" AND pass = "pass"; -- REQU
  WHERE id = 27
 
  ---------------------------------------------------------------------------------------------------------------------------------
-<<<<<<< Updated upstream
- INSERT INTO users_service(id_service, id_users, date_time)
-=======
-<<<<<<< HEAD
 
  -- inscription phillipe au KRAV MAGA -- 
 
 
 INSERT INTO users_service(id_service, id_users, date_time)
-=======
- INSERT INTO users_service(id_service, id_users, date_time)
->>>>>>> master
->>>>>>> Stashed changes
 
 VALUES
 
