@@ -46,9 +46,11 @@ INSERT INTO message (id_expeditor, id_receiver, message_content, date_and_time) 
 
 	 	SELECT * FROM message
 
-	 	WHERE (id_expeditor = 18 AND id_receiver = 26) OR (id_expeditor = 26 AND id_receiver = 18)
+	 	WHERE (id_expeditor = 18 AND id_receiver = 27) OR (id_expeditor = 27 AND id_receiver = 18)
 
 	 	ORDER BY date_and_time ASC;
+
+
 
 
 
