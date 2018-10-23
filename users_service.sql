@@ -14,3 +14,8 @@
 	 	(19,11 , ' 2018-10-25 12:00:00'),
 	 	(7,25 , ' 2018-10-25 12:00:00'),
 	 	(20,24 , ' 2018-10-25 12:00:00');
+	 	--
+	 	ALTER TABLE users_service
+	 	ADD FOREIGN KEY(users_service) REFERENCES users(id) ON DELETE CASCADE ON UPDATE CASCADE 
+	 	ALTER TABLE users_service
+	 	ADD FOREIGN KEY(users_service) REFERENCES service(id) ON DELETE CASCADE ON UPDATE CASCADE 
