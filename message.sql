@@ -41,8 +41,17 @@ INSERT INTO message (id_expeditor, id_receiver, message_content, date_and_time) 
 	 	ALTER TABLE message
 	 	ADD FOREIGN KEY(id_receiver) REFERENCES users(id) ON DELETE CASCADE ON UPDATE CASCADE ;
 
+	 	-- affichage des diff mess reçu par un users -- # STORY 8 
 
-	 	-- AFFICHAGE DES MESSAGES -- # STORY 8 
+
+	 	SELECT * FROM message
+
+	 	WHERE (id_receiver = 12) OR (id_expeditor = 12)
+
+	 	ORDER BY date_and_time ASC;
+
+
+	 	-- AFFICHAGE D'UNE conversation -- # STORY 9
 
 	 	SELECT * FROM message
 
