@@ -19,17 +19,12 @@ SELECT * FROM users WHERE mail = "Philippe@coding.fr" AND pass = "pass"; -- REQU
  	 fixe_number = "0187677569"
  WHERE id = 27
 
-<<<<<<< Updated upstream
  ---------------------------------------------------------------------------------------------------------------------------------
 
  -- inscription phillipe au KRAV MAGA -- # STORY 5 
 
 
 INSERT INTO users_service(id_service, id_users, date_time)
-=======
- --------------- INSCRI
- INSERT INTO users_service(id_service, id_users, date_time)
->>>>>>> Stashed changes
 
 VALUES
 
