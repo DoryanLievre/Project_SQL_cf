@@ -17,10 +17,10 @@ SELECT * FROM users WHERE mail = "Philippe@coding.fr" AND pass = "pass"; -- REQU
  	 state = "France",
  	 phone_number = "0698764532",
  	 fixe_number = "0187677569"
- WHERE id = 27;
+ WHERE id = 27
 
  ---------------------------------------------------------------------------------------------------------------------------------
- INSERT INTO user_service(id_service, id_users, date_time)
+ INSERT INTO users_service(id_service, id_users, date_time)
 
 VALUES
 
