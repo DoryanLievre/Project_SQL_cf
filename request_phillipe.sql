@@ -29,3 +29,12 @@ INSERT INTO users_service(id_service, id_users, date_time)
 VALUES
 
 	(10, 27, "2018-10-26 12:00:00");
+
+-- Message de Phillou -- # STORY 7 
+
+INSERT INTO message (id_expeditor, id_receiver, message_content, date_and_time)
+VALUES 
+	 
+		(18,27,	"Mdrrrrrr le badminchiotte c dla 2mer wlh, morray c pr les zoulettes! Archems","2018-10-25 12:00:00"),
+
+		(27,18,	"Viens au parking, comme ça le badminton c'est pour les zoulettes?","2018-10-25 12:00:00");
