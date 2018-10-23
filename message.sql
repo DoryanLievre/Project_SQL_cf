@@ -34,7 +34,7 @@ INSERT INTO message (id_expeditor, id_receiver, message_content, date_and_time) 
 	    (8,11, 'Rugis Morty','2010-08-24 12:00:00'),
 	    (6,7, 'Oui, oui je connais cette théorie','2010-08-24 12:00:00');
 	   
-
+	    -- FOREIGN KEY For message -- 
 	    ALTER TABLE message
 	 	ADD FOREIGN KEY(id_expeditor) REFERENCES users(id) ON DELETE CASCADE ON UPDATE CASCADE ;
 	 	ALTER TABLE message
