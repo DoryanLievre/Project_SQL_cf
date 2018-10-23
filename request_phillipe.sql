@@ -7,3 +7,17 @@ INSERT INTO users (mail, pass, nickname, date_inscription)  -- PERMET D AJOUTER 
 
 SELECT * FROM users WHERE mail = "Philippe@coding.fr" AND pass = "pass"; -- REQUETE :cherche dans la table users dans la colonne "mail" et "pass"
 																		-- si la condition est respecté cela entraine une connexion  
+-- update in users --
+
+ UPDATE users
+ 
+ SET postal_address = "55 rue de la carrotte", 
+ 	 postal_code = "75080",
+ 	 city = "Paris",
+ 	 state = "France",
+ 	 phone_number = "0698764532",
+ 	 fixe_number = "0187677569"
+ WHERE id = 27;
+
+
+ ---------------------------------------------------------------------------------------------------------------------------------
