@@ -4,24 +4,24 @@
 -- CREATE DATABASE com_sport CHARACTER SET 'utf8';
 
 USE com_sport; 
-
+--TABLE DE UTILISATEUR 
 CREATE TABLE users ( 
-    id INT UNSIGNED NOT NULL AUTO_INCREMENT,
-    mail VARCHAR (30) NOT NULL UNIQUE,
+    id INT UNSIGNED NOT NULL AUTO_INCREMENT, --NOT NULL NOUS OBLIGE DE SPECIFIER LA VALEUR DE CETTE DONNEE
+    mail VARCHAR (30) NOT NULL UNIQUE, -- UNIQUE REND UNE VARIABLE COMME LE PSEUDO UNIQUE : IL NE PEUT PAS Y AVOIR DEUX ENTREE IDENTIQUE	
     pass VARCHAR (30) NOT NULL,
     nickname VARCHAR (20) NOT NULL UNIQUE,
-    postal_address VARCHAR (40) NULL DEFAULT NULL,
+    postal_address VARCHAR (40) NULL DEFAULT NULL, -- NULL DEFAULT NULL PERMET DE NE PAS SPECIFIER LA VALEUR DE CETTE DONNEE (voir ligne 175)
     postal_code INT NULL DEFAULT NULL,
     city VARCHAR (40) NULL DEFAULT NULL,
     state VARCHAR (30) NULL DEFAULT NULL,
     phone_number VARCHAR (15)  NULL DEFAULT NULL,
     fixe_number VARCHAR (15) NULL DEFAULT NULL, 
     date_inscription date NOT NULL, 
-    PRIMARY KEY (id)
+    PRIMARY KEY (id) --INDIQUE QUE LA CLE PRIMAIRE EST ID
     )
- ENGINE=INNODB DEFAULT CHARSET= 'utf8';
+ ENGINE=INNODB DEFAULT CHARSET= 'utf8'; -- Type d'encodage pour les caractère
 
-CREATE TABLE service (
+CREATE TABLE service ( --TABLE DES SERVICE
 	id int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
 	id_users int(10) UNSIGNED NOT NULL,
 	name_service varchar(45) NOT NULL,
@@ -32,9 +32,9 @@ CREATE TABLE service (
 	complementary_info text NULL,
 	PRIMARY KEY (id)
   )  
-ENGINE=INNODB DEFAULT CHARSET= 'utf8';
+ENGINE=INNODB DEFAULT CHARSET= 'utf8'; 
 
-CREATE TABLE users_service(
+CREATE TABLE users_service( --TABLE UTILISATEUR + SERVICE 
 	id INT UNSIGNED NOT NULL AUTO_INCREMENT,
 	id_service INT UNSIGNED NOT NULL,
 	id_users INT UNSIGNED NOT NULL,
@@ -43,7 +43,7 @@ CREATE TABLE users_service(
 )
 ENGINE=INNODB DEFAULT CHARSET= 'utf8';
 
-CREATE TABLE message(
+CREATE TABLE message( --TABLE DES MESSAGES
 	id INT UNSIGNED NOT NULL AUTO_INCREMENT,
 	id_expeditor INT UNSIGNED NOT NULL,
 	id_receiver INT UNSIGNED NOT NULL,
@@ -57,7 +57,7 @@ ENGINE=INNODB DEFAULT CHARSET= 'utf8';
 
 -- Users Request's   --
 
-INSERT INTO users(mail, pass, nickname, postal_address, postal_code, city, state, phone_number, fixe_number, date_inscription)
+INSERT INTO users(mail, pass, nickname, postal_address, postal_code, city, state, phone_number, fixe_number, date_inscription) --CREATION DES USERS
   
   VALUES
 	    ('mica@coding.fr','pass','mica','22 rue des choux','75000','paris','France', '0678980310', '0123985674', ' 2018-10-25' ),
@@ -92,7 +92,7 @@ INSERT INTO users(mail, pass, nickname, postal_address, postal_code, city, state
 
 INSERT INTO service (id_users, name_service, postal_address_service, postal_code_service, city_service, time_service, complementary_info)
 
-   VALUES 
+   VALUES --CREATION DES SERVICE
 
 		(1,'judo','3 rue arbre','75000','paris','2018-10-25 12:00:00', NULL),
 		(2,'wing chung','3 rue branche','75000','paris','2018-10-25 12:10:00', NULL),
@@ -117,7 +117,7 @@ INSERT INTO service (id_users, name_service, postal_address_service, postal_code
 
  -- Users service Request's -- 
 
- INSERT INTO users_service (id_service, id_users, date_time)
+ INSERT INTO users_service (id_service, id_users, date_time) --ASSOCIATIONS DES TABLES USER ET SERVICE
  	
  	VALUES
 
@@ -134,9 +134,9 @@ INSERT INTO service (id_users, name_service, postal_address_service, postal_code
  	
 
 -- message -- 
-INSERT INTO message (id_expeditor, id_receiver, message_content, date_and_time)
-
-	VALUES
+INSERT INTO message (id_expeditor, id_receiver, message_content, date_and_time) --MESSAGE ENVOYE ENTRE UTILISATEUR
+																				
+	VALUES 
 		(1,25,	"vien coding","2018-10-25 12:00:00"),
 		(2,24,	"cc","2018-10-25 12:00:00"),
 		(3,23,	"cc","2018-10-25 12:00:00"),
@@ -171,18 +171,13 @@ INSERT INTO message (id_expeditor, id_receiver, message_content, date_and_time)
 
 -- Inscription ( users ) -- 
 
-INSERT INTO users (mail, pass, nickname, date_inscription)
+INSERT INTO users (mail, pass, nickname, date_inscription)  --PERMET D AJOUTER UNE LIGNE 
 	VALUES ("Philippe@coding.fr", "pass", "Phillou", "2018-09-23 12:00:00");
 
 -- Connexion ( users )
 
-SELECT * FROM users WHERE mail = "Philippe@coding.fr" AND pass = "pass";
-
-
-
-
-
-
+SELECT * FROM users WHERE mail = "Philippe@coding.fr" AND pass = "pass"; --REQUETE :cherche dans la table users dans la colonne "mail" et "pass"
+																		--si la condition est respecté cela entraine une connexion  
 
 
 
