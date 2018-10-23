@@ -57,7 +57,7 @@ ENGINE=INNODB DEFAULT CHARSET= 'utf8';
 
 -- Users Request's   --
 
-INSERT INTO users(mail, pass, nickname, postal_address, postal_code, city, state, phone_number, fixe_number, date_inscription) --CREATION DES USERS
+INSERT INTO users(mail, pass, nickname, postal_address, postal_code, city, state, phone_number, fixe_number, date_inscription) -- CREATION DES USERS
   
   VALUES
 	    ('mica@coding.fr','pass','mica','22 rue des choux','75000','paris','France', '0678980310', '0123985674', ' 2018-10-25' ),
