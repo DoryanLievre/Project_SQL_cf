@@ -26,12 +26,15 @@ INSERT INTO service (id_users, name_service, postal_address_service, postal_code
 	    (20, 'Jet Kundo', '10 rue albert', '75000', 'Paris', '2018-10-25 12:00:00', 'Pas de jambes');
 
 
+
+
+-- FOREIGN KEY FOR SERVICE --
+ALTER TABLE service
+	 ADD FOREIGN KEY(id_users) REFERENCES users(id) ON DELETE CASCADE ON UPDATE CASCADE ;
 -- PHILLIP Make's a new sport -- # STORY 6 
+
 INSERT INTO service (id_users, name_service, postal_address_service, postal_code_service, city_service, time_service, complementary_info)
 	VALUES 
 			(27,'BADMINTON','3 rue Mangroove','75000','Paris','2018-10-25 12:00:00', "Nouveau prof, nouveau sprot, nouvel vie: tout est neuf!");
 
 	
--- FOREIGN KEY FOR SERVICE --
-	ALTER TABLE service
-	 	ADD FOREIGN KEY(id_users) REFERENCES users(id) ON DELETE CASCADE ON UPDATE CASCADE ;
