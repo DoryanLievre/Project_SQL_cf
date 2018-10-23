@@ -1,4 +1,4 @@
--- SERVICE --
+ # STORY 1
 
 
 -- CREATE DATABASE com_sport CHARACTER SET 'utf8';
