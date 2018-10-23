@@ -1,4 +1,5 @@
--- message -- 
+-- message -- # STORY 2 
+
 INSERT INTO message (id_expeditor, id_receiver, message_content, date_and_time) -- MESSAGE ENVOYE ENTRE UTILISATEUR
 																				
 	VALUES 
@@ -39,4 +40,12 @@ INSERT INTO message (id_expeditor, id_receiver, message_content, date_and_time) 
 	 	ADD FOREIGN KEY(id_expeditor) REFERENCES users(id) ON DELETE CASCADE ON UPDATE CASCADE ;
 	 	ALTER TABLE message
 	 	ADD FOREIGN KEY(id_receiver) REFERENCES users(id) ON DELETE CASCADE ON UPDATE CASCADE ;
+
+
+	 	-- AFFICHAGE DES MESSAGES -- # STORY 8 
+
+
+
+
+
 	 	
