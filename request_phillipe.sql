@@ -20,7 +20,11 @@ SELECT * FROM users WHERE mail = "Philippe@coding.fr" AND pass = "pass"; -- REQU
  WHERE id = 27
 
  ---------------------------------------------------------------------------------------------------------------------------------
- INSERT INTO users_service(id_service, id_users, date_time)
+
+ -- inscription phillipe au KRAV MAGA -- 
+
+
+INSERT INTO users_service(id_service, id_users, date_time)
 
 VALUES
 
