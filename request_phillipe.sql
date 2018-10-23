@@ -19,5 +19,9 @@ SELECT * FROM users WHERE mail = "Philippe@coding.fr" AND pass = "pass"; -- REQU
  	 fixe_number = "0187677569"
  WHERE id = 27;
 
-
  ---------------------------------------------------------------------------------------------------------------------------------
+ INSERT INTO user_service(id_service, id_users, date_time)
+
+VALUES
+
+	(10, 27, "2018-10-26 12:00:00");
