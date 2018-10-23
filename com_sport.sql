@@ -60,32 +60,32 @@ ENGINE=INNODB DEFAULT CHARSET= 'utf8';
 INSERT INTO users(mail, pass, nickname, postal_address, postal_code, city, state, phone_number, fixe_number, date_inscription) -- CREATION DES USERS
   
   VALUES
-	    ('mica@coding.fr','pass','mica','22 rue des choux','75000','paris','France', '0678980310', '0123985674', ' 2018-10-25' ),
-	  	('paul@coding.fr','pass','paul','22 rue des choux','75000','paris','France', '0678980310', '0123985674', ' 2018-10-25' ),
-	  	('mamad@coding.fr','pass','mamad','22 rue des choux','75000','paris','France',  '0678980310', '0123985674', ' 2018-10-25' ),
-	  	('dodo@coding.fr','pass','dodo','22 rue des choux','75000','paris', 'France', '0678980310', '0123985674', ' 2018-10-25' ),
-	  	('hydri@coding.fr','pass','hydri','22 rue des choux','75000','paris', 'France', '0678980310', '0123985674', ' 2018-10-25' ),
-	  	('synax@coding.fr','pass','synax','22 rue des choux','75000','paris', 'France','0678980310', '0123985674', ' 2018-10-25' ),
-	  	('esart@coding.fr','pass','easart','22 rue des choux','75000','paris', 'France','0678980310', '0123985674', ' 2018-10-25' ),
-	  	('eashin@coding.fr','pass','eashin','22 rue des choux','75000','paris', 'France','0678980310', '0123985674', ' 2018-10-25' ),
-	  	('hysdriss@coding.fr','pass','hysdriss','22 rue des choux','75000','paris', 'France','0678980310', '0123985674', ' 2018-10-25' ),
-	  	('adronz@coding.fr','pass','adronz','22 rue des choux','75000','paris', 'France','0678980310', '0123985674', ' 2018-10-25' ),
-	  	('shimya@coding.fr','pass','shimya','22 rue des choux','75000','paris', 'France','0678980310', '0123985674', ' 2018-10-25' ),
-	  	('shirrey@coding.fr','pass','shirrey','22 rue des choux','75000','paris', 'France','0678980310', '0123985674', ' 2018-10-25' ),
-	  	('mark@coding.fr','pass','mark','22 rue des choux','75000','paris', 'France','0678980310', '0123985674', ' 2018-10-25' ),
-	  	('john@coding.fr','pass','john','22 rue des choux','75000','paris', 'France','0678980310', '0123985674', ' 2018-10-25' ),
-	  	('steve@coding.fr','pass','steve','22 rue des choux','75000','paris', 'France', '0678980310', '0123985674', ' 2018-10-25' ),
-	  	('jacki@coding.fr','pass','jacki','22 rue des choux','75000','paris', 'France', '0678980310', '0123985674', ' 2018-10-25' ),
-	  	('roh2f@coding.fr','pass','roh2f','22 rue des choux','75000','paris', 'France', '0678980310', '0123985674', ' 2018-10-25' ),
-	  	('booba@coding.fr','pass','booba','22 rue des choux','75000','paris', 'France', '0678980310', '0123985674', ' 2018-10-25' ),
-	  	('fanette@coding.fr','pass','fanette','22 rue des choux','75000','paris', 'France', '0678980310', '0123985674', ' 2018-10-25' ),
-	  	('vanessa@coding.fr','pass','vanessa','22 rue des choux','75000','paris', 'France', '0678980310', '0123985674', ' 2018-10-25' ),
-	  	('clara@coding.fr','pass','clara','22 rue des choux','75000','paris', 'France', '0678980310', '0123985674', ' 2018-10-25' ),
-	  	('juliette@coding.fr','pass','juliette','22 rue des choux','75000','paris', 'France', '0678980310', '0123985674', ' 2018-10-25' ),
-	  	('dora@coding.fr','pass','dora','22 rue des choux','75000','paris', 'France', '0678980310', '0123985674', ' 2018-10-25' ),
-	  	('bruno@coding.fr','pass','bruno','22 rue des choux','75000','paris', 'France', '0678980310', '0123985674', ' 2018-10-25' ),
-	  	('shun-lee@coding.fr','pass','shun-lee','22 rue des choux','75000','paris', 'France', '0678980310', '0123985674', ' 2018-10-25' ),
-	  	('takeda@coding.fr','pass','takeda','22 rue des choux','75000','paris', 'France', '0678980310', '0123985674', ' 2018-10-25' );
+	    ('mica@coding.fr','Pass','Mica','22 rue des choux','75000','Paris','France', '0678980310', '0123985674', ' 2018-10-25' ),
+	  	('paul@coding.fr','Pass','Paul','22 rue des choux','75000','Paris','France', '0678980310', '0123985674', ' 2018-10-25' ),
+	  	('mamad@coding.fr','Pass','Mamad','22 rue des choux','75000','Paris','France',  '0678980310', '0123985674', ' 2018-10-25' ),
+	  	('dodo@coding.fr','Pass','Dodo','22 rue des choux','75000','Paris', 'France', '0678980310', '0123985674', ' 2018-10-25' ),
+	  	('hydri@coding.fr','Pass','Hydri','22 rue des choux','75000','Paris', 'France', '0678980310', '0123985674', ' 2018-10-25' ),
+	  	('synax@coding.fr','Pass','Synax','22 rue des choux','75000','Paris', 'France','0678980310', '0123985674', ' 2018-10-25' ),
+	  	('esart@coding.fr','Pass','Easart','22 rue des choux','75000','Paris', 'France','0678980310', '0123985674', ' 2018-10-25' ),
+	  	('eashin@coding.fr','Pass','Eashin','22 rue des choux','75000','Paris', 'France','0678980310', '0123985674', ' 2018-10-25' ),
+	  	('hysdriss@coding.fr','Pass','Hysdriss','22 rue des choux','75000','Paris', 'France','0678980310', '0123985674', ' 2018-10-25' ),
+	  	('adronz@coding.fr','Pass','Adronz','22 rue des choux','75000','Paris', 'France','0678980310', '0123985674', ' 2018-10-25' ),
+	  	('shimya@coding.fr','Pass','Shimya','22 rue des choux','75000','Paris', 'France','0678980310', '0123985674', ' 2018-10-25' ),
+	  	('shirrey@coding.fr','Pass','Shirrey','22 rue des choux','75000','Paris', 'France','0678980310', '0123985674', ' 2018-10-25' ),
+	  	('mark@coding.fr','Pass','Mark','22 rue des choux','75000','Paris', 'France','0678980310', '0123985674', ' 2018-10-25' ),
+	  	('john@coding.fr','Pass','John','22 rue des choux','75000','Paris', 'France','0678980310', '0123985674', ' 2018-10-25' ),
+	  	('steve@coding.fr','Pass','Steve','22 rue des choux','75000','Paris', 'France', '0678980310', '0123985674', ' 2018-10-25' ),
+	  	('jacki@coding.fr','Pass','Jacki','22 rue des choux','75000','Paris', 'France', '0678980310', '0123985674', ' 2018-10-25' ),
+	  	('roh2f@coding.fr','Pass','Roh2f','22 rue des choux','75000','Paris', 'France', '0678980310', '0123985674', ' 2018-10-25' ),
+	  	('booba@coding.fr','Pass','Booba','22 rue des choux','75000','Paris', 'France', '0678980310', '0123985674', ' 2018-10-25' ),
+	  	('fanette@coding.fr','Pass','Fanette','22 rue des choux','75000','Paris', 'France', '0678980310', '0123985674', ' 2018-10-25' ),
+	  	('vanessa@coding.fr','Pass','Vanessa','22 rue des choux','75000','Paris', 'France', '0678980310', '0123985674', ' 2018-10-25' ),
+	  	('clara@coding.fr','Pass','Clara','22 rue des choux','75000','Paris', 'France', '0678980310', '0123985674', ' 2018-10-25' ),
+	  	('juliette@coding.fr','Pass','Juliette','22 rue des choux','75000','Paris', 'France', '0678980310', '0123985674', ' 2018-10-25' ),
+	  	('dora@coding.fr','Pass','Dora','22 rue des choux','75000','Paris', 'France', '0678980310', '0123985674', ' 2018-10-25' ),
+	  	('bruno@coding.fr','Pass','Bruno','22 rue des choux','75000','Paris', 'France', '0678980310', '0123985674', ' 2018-10-25' ),
+	  	('shun-lee@coding.fr','Pass','Shun-Lee','22 rue des choux','75000','Paris', 'France', '0678980310', '0123985674', ' 2018-10-25' ),
+	  	('takeda@coding.fr','Pass','Takeda','22 rue des choux','75000','Paris', 'France', '0678980310', '0123985674', ' 2018-10-25' );
 
 
 --  Service request's --
@@ -94,26 +94,26 @@ INSERT INTO service (id_users, name_service, postal_address_service, postal_code
 
    VALUES -- CREATION DES SERVICE
 
-		(1,'judo','3 rue arbre','75000','paris','2018-10-25 12:00:00', NULL),
-		(2,'wing chung','3 rue branche','75000','paris','2018-10-25 12:10:00', NULL),
-		(3,'kyo ku shin kai','3 rue feuilles','75000','paris','2018-10-25 12:20:00', NULL),
-		(4,'muay thai','3 rue branche','75000','paris','2018-10-25 12:10:00', NULL),
-		(5,'sambo','3 rue branche','75000','paris','2018-10-25 12:10:00', NULL),
-		(6,'vietvodao','3 rue branche','75000','paris','2018-10-25 12:10:00', NULL),
-		(7,'qi kang','3 rue branche','75000','paris','2018-10-25 12:10:00', NULL),
-		(8,'cqc','3 rue branche','75000','paris','2018-10-25 12:10:00', NULL),
-		(9,'senda','3 rue branche','75000','paris','2018-10-25 12:10:00', NULL),
-		(10,'kravmaga','3 rue branche','75000','paris','2018-10-25 12:10:00', NULL),
-		(11, 'Tennis de table', '10 rue albert', '75000', 'Paris', '2018-10-25 12:00:00', 'abcd'),
-	   	(12, 'Basketball', '10 rue albert', '75000', 'Paris', '2018-10-25 12:00:00', 'abcd'),
-	    (13, 'Airsoft', '10 rue albert', '75000', 'Paris', '2018-10-25 12:00:00', 'abcd'),
-	    (14, 'Tir Sportif', '10 rue albert', '75000', 'Paris', '2018-10-25 12:00:00', 'abcd'),
-	    (15, 'Zumba', '10 rue albert', '75000', 'Paris', '2018-10-25 12:00:00', 'abcd'),
-	    (16, 'Aquabiking', '10 rue albert', '75000', 'Paris', '2018-10-25 12:00:00', 'abcd'),
-	    (17, 'Escalade', '10 rue albert', '75000', 'Paris', '2018-10-25 12:00:00', 'abcd'),
-	    (18, 'Patinage Artistique', '10 rue albert', '75000', 'Paris', '2018-10-25 12:00:00', 'abcd'),
-	    (19, 'Pétanque', '10 rue albert', '75000', 'Paris', '2018-10-25 12:00:00', 'abcd'),
-	    (20, 'Jet Kundo', '10 rue albert', '75000', 'Paris', '2018-10-25 12:00:00', 'abcd');
+		(1,'Judo','3 rue arbre','75000','Paris','2018-10-25 12:00:00', NULL),
+		(2,'Wing Chung','3 rue branche','75000','Paris','2018-10-25 12:10:00', NULL),
+		(3,'Kyo Ku Shin Kai','3 rue feuilles','75000','Paris','2018-10-25 12:20:00', NULL),
+		(4,'Muay Thai','3 rue branche','75000','Paris','2018-10-25 12:10:00', NULL),
+		(5,'Sambo','3 rue branche','75000','Paris','2018-10-25 12:10:00', NULL),
+		(6,'Vietvodao','3 rue branche','75000','Paris','2018-10-25 12:10:00', NULL),
+		(7,'Qi Kang','3 rue branche','75000','Paris','2018-10-25 12:10:00', NULL),
+		(8,'CQC','3 rue branche','75000','Paris','2018-10-25 12:10:00', NULL),
+		(9,'Senda','3 rue branche','75000','Paris','2018-10-25 12:10:00', 'Pas de jambes'),
+		(10,'Kravmaga','3 rue branche','75000','Paris','2018-10-25 12:10:00', 'Pas de jambes'),
+		(11, 'Tennis de table', '10 rue albert', '75000', 'Paris', '2018-10-25 12:00:00', 'Pas de jambes'),
+	   	(12, 'Basketball', '10 rue albert', '75000', 'Paris', '2018-10-25 12:00:00', 'Pas de jambes'),
+	    (13, 'Airsoft', '10 rue albert', '75000', 'Paris', '2018-10-25 12:00:00', 'Pas de jambes'),
+	    (14, 'Tir Sportif', '10 rue albert', '75000', 'Paris', '2018-10-25 12:00:00', 'Pas de jambes'),
+	    (15, 'Zumba', '10 rue albert', '75000', 'Paris', '2018-10-25 12:00:00', 'Pas de jambes'),
+	    (16, 'Aquabiking', '10 rue albert', '75000', 'Paris', '2018-10-25 12:00:00', 'Pas de jambes'),
+	    (17, 'Escalade', '10 rue albert', '75000', 'Paris', '2018-10-25 12:00:00', 'Pas de jambes'),
+	    (18, 'Patinage Artistique', '10 rue albert', '75000', 'Paris', '2018-10-25 12:00:00', 'Pas de jambes'),
+	    (19, 'Pétanque', '10 rue albert', '75000', 'Paris', '2018-10-25 12:00:00', 'Pas de jambes'),
+	    (20, 'Jet Kundo', '10 rue albert', '75000', 'Paris', '2018-10-25 12:00:00', 'Pas de jambes');
 
  -- Users service Request's -- 
 
@@ -137,21 +137,21 @@ INSERT INTO service (id_users, name_service, postal_address_service, postal_code
 INSERT INTO message (id_expeditor, id_receiver, message_content, date_and_time) -- MESSAGE ENVOYE ENTRE UTILISATEUR
 																				
 	VALUES 
-		(1,25,	"vien coding","2018-10-25 12:00:00"),
-		(2,24,	"cc","2018-10-25 12:00:00"),
-		(3,23,	"cc","2018-10-25 12:00:00"),
-		(4,22,	"yop","2018-10-25 12:00:00"),
-		(5,21,	"raton","2018-10-25 12:00:00"),
-		(6,20,	"bruh","2018-10-25 12:00:00"),
-		(7,19,	"pizza","2018-10-25 12:00:00"),
-		(8,18,	"tarte","2018-10-25 12:00:00"),
-		(9,17,	"patate","2018-10-25 12:00:00"),
-		(10,16,	"ouep","2018-10-25 12:00:00"),
-		(11,15,	"macbook","2018-10-25 12:00:00"),
-		(12,14,	"samsung","2018-10-25 12:00:00"),
-		(13,13,	"xiomi","2018-10-25 12:00:00"),
-		(14,12,	"steak frite","2018-10-25 12:00:00"),
-		(15,11,	"porte","2018-10-25 12:00:00"),
+		(1,25,	"Viens coding","2018-10-25 12:00:00"),
+		(2,24,	"CC","2018-10-25 12:00:00"),
+		(3,23,	"CC","2018-10-25 12:00:00"),
+		(4,22,	"Yop","2018-10-25 12:00:00"),
+		(5,21,	"Raton","2018-10-25 12:00:00"),
+		(6,20,	"Bruh","2018-10-25 12:00:00"),
+		(7,19,	"Pizza","2018-10-25 12:00:00"),
+		(8,18,	"Tarte","2018-10-25 12:00:00"),
+		(9,17,	"Patate","2018-10-25 12:00:00"),
+		(10,16,	"Ouep","2018-10-25 12:00:00"),
+		(11,15,	"Macbook","2018-10-25 12:00:00"),
+		(12,14,	"Samsung","2018-10-25 12:00:00"),
+		(13,13,	"Xiomi","2018-10-25 12:00:00"),
+		(14,12,	"Steak frite","2018-10-25 12:00:00"),
+		(15,11,	"Porte","2018-10-25 12:00:00"),
 		(1,2, 'Heeeeey','2010-08-24 12:00:00'),
 	    (12,23, 'Mange des groseille','2010-08-24 12:00:00'),
 	    (14,21, 'Paye ton grec bg','2010-08-24 12:00:00'),
@@ -172,7 +172,7 @@ INSERT INTO message (id_expeditor, id_receiver, message_content, date_and_time) 
 -- Inscription ( users ) -- 
 
 INSERT INTO users (mail, pass, nickname, date_inscription)  -- PERMET D AJOUTER UNE LIGNE 
-	VALUES ("Philippe@coding.fr", "pass", "Phillou", "2018-09-23 12:00:00");
+	VALUES ("Philippe@coding.fr", "Pass", "Phillou", "2018-09-23 12:00:00");
 
 -- Connexion ( users )
 
