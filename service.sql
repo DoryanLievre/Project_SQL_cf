@@ -73,7 +73,15 @@ INNER JOIN users as U ON U.id = S.id_users
 LEFT JOIN users_service as SU ON SU.id_service = S.id 
 -- 2 jointure ( externe ) entre SU.id_service & S.id --
 LEFT JOIN users as U2 ON U2.id = SU.id_users 
--- 3 jointure ( externe ) entre U2.id & SU.id_users -- 
+-- 3 jointure ( externe ) entre U2.id & SU.id_users --
+
+
+# STORY 12 
+
+
+DELETE FROM service 
+
+WHERE id =15  
 
 
 
