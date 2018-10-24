@@ -24,6 +24,20 @@ INSERT INTO service (id_users, name_service, postal_address_service, postal_code
 	    (18, 'Patinage Artistique', '10 rue albert', '75000', 'Paris', '2018-10-25 12:00:00', 'Pas de jambes'),
 	    (19, 'Pétanque', '10 rue albert', '75000', 'Paris', '2018-10-25 12:00:00', 'Pas de jambes'),
 	    (20, 'Jet Kundo', '10 rue albert', '75000', 'Paris', '2018-10-25 12:00:00', 'Pas de jambes');
+ INSERT INTO service (name_service, postal_address_service, postal_code_service, city_service, time_service, complementary_info)
+
+   VALUES -- CREATION DES SERVICE
+  					('Judo','3 rue arbre','75000','Paris','2018-10-25 12:00:00', NULL),
+  					('Kayak','3 rue arbre','75000','Paris','2018-10-25 12:00:00', NULL),
+  					('Ji-jutsu','3 rue arbre','75000','Paris','2018-10-25 12:00:00', NULL),
+  					('Pancrate','3 rue arbre','75000','Paris','2018-10-25 12:00:00', NULL),
+  					('Base-ball','3 rue arbre','75000','Paris','2018-10-25 12:00:00', NULL),
+  					('Cricket','3 rue arbre','75000','Paris','2018-10-25 12:00:00', NULL),
+  					('Natation','3 rue arbre','75000','Paris','2018-10-25 12:00:00', NULL),
+  					('Athletisme','3 rue arbre','75000','Paris','2018-10-25 12:00:00', NULL),
+  					('Cyclisme','3 rue arbre','75000','Paris','2018-10-25 12:00:00', NULL),
+  					('Fitness','3 rue arbre','75000','Paris','2018-10-25 12:00:00', NULL),
+  					('Water-Polo','3 rue arbre','75000','Paris','2018-10-25 12:00:00', NULL),
 
 
 
