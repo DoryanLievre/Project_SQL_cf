@@ -37,7 +37,7 @@ INSERT INTO service (id_users, name_service, postal_address_service, postal_code
   					('Athletisme','3 rue arbre','75000','Paris','2018-10-25 12:00:00', NULL),
   					('Cyclisme','3 rue arbre','75000','Paris','2018-10-25 12:00:00', NULL),
   					('Fitness','3 rue arbre','75000','Paris','2018-10-25 12:00:00', NULL),
-  					('Water-Polo','3 rue arbre','75000','Paris','2018-10-25 12:00:00', NULL),
+  					('Water-Polo','3 rue arbre','75000','Paris','2018-10-25 12:00:00', NULL);
 
 
 
@@ -55,5 +55,35 @@ INSERT INTO service (id_users, name_service, postal_address_service, postal_code
 
 	
 -- Search service in list -- # STORY 10 
+
+SELECT S.id_users, S.name_service, S.postal_address_service, S.postal_code_service, S.city_service, S.time_service, S.complementary_info
+FROM service as S
+WHERE S.id NOT IN (SELECT id_service FROM users_service)
+AND S.time_service > NOW();
+
+
+-- Print service info -- # STORY 11 
+
+SELECT S.*, U.nickname as Creators, U2.nickname as Subscribers
+ -- S.* = all service tab, U.nickname =  nickname in users tab, U2.nickname = nickname in another new users tab --
+FROM service as S
+-- A partir de la tab le service -- 
+INNER JOIN users as U ON U.id = S.id_users
+-- 1 jointure ( interne ) entre  U.id & S.id_users --
+LEFT JOIN users_service as SU ON SU.id_service = S.id 
+-- 2 jointure ( externe ) entre SU.id_service & S.id --
+LEFT JOIN users as U2 ON U2.id = SU.id_users 
+-- 3 jointure ( externe ) entre U2.id & SU.id_users -- 
+
+
+
+
+
+
+
+
+
+
+
 
 
