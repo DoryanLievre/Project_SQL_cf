@@ -40,7 +40,7 @@ INSERT INTO service (id_users, name_service, postal_address_service, postal_code
   					('Water-Polo','3 rue arbre','75000','Paris','2018-10-25 12:00:00', NULL);
 
 
-
+ 
 
 -- FOREIGN KEY FOR SERVICE -- 
 
@@ -80,8 +80,22 @@ LEFT JOIN users as U2 ON U2.id = SU.id_users
 
 
 DELETE FROM service 
-
 WHERE id =15  
+
+
+-- Récupération des info du premier service auquel un user aura participé --  # STORY 17 
+
+SELECT U.nickname as Suggest_user, U2.nickname as subscribe_user, S.name_service, S.postal_address_service, S.postal_code_service, S.city_service, S.time_service, S.complementary_info,
+FROM service AS S 
+INNER JOIN users as U ON U.id = S.id_users
+LEFT JOIN users_service as SU ON SU.id_service = S.id 
+LEFT JOIN users as U2 ON U2.id = SU.id_users 
+WHERE SU.id_users = 27 
+LIMIT 1 
+
+
+
+ 
 
 
 
