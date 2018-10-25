@@ -76,7 +76,7 @@ LEFT JOIN users as U2 ON U2.id = SU.id_users
 -- 3 jointure ( externe ) entre U2.id & SU.id_users --
 
 
-# STORY 12 
+-- Supprime un service -- # STORY 12 
 
 
 DELETE FROM service 

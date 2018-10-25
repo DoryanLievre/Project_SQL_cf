@@ -20,7 +20,7 @@
 	 	ALTER TABLE users_service
 	 	ADD FOREIGN KEY(users_service) REFERENCES service(id) ON DELETE CASCADE ON UPDATE CASCADE ;
 
--- #STORY 13 --
+-- Supprime un users inscrit à un service -- # STORY 13
 
 DELETE FROM users_service
 WHERE id_users = 1 
