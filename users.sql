@@ -29,3 +29,11 @@ INSERT INTO users(mail, pass, nickname, postal_address, postal_code, city, state
 	  	('bruno@coding.fr','Pass','Bruno','22 rue des choux','75000','Paris', 'France', '0678980310', '0123985674', ' 2018-10-25' ),
 	  	('shun-lee@coding.fr','Pass','Shun-Lee','22 rue des choux','75000','Paris', 'France', '0678980310', '0123985674', ' 2018-10-25' ),
 	  	('takeda@coding.fr','Pass','Takeda','22 rue des choux','75000','Paris', 'France', '0678980310', '0123985674', ' 2018-10-25' );
+
+ALTER TABLE users
+ADD FOREIGN KEY users REFERENCES service 
+ALTER TABLE users
+ADD FOREIGN KEY users REFERENCES users_service
+ALTER TABLE users
+ADD FOREIGN KEY users REFERENCES message 
+ 
