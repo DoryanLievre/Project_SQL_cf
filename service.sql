@@ -90,7 +90,8 @@ FROM service AS S
 INNER JOIN users as U ON U.id = S.id_users
 LEFT JOIN users_service as SU ON SU.id_service = S.id 
 LEFT JOIN users as U2 ON U2.id = SU.id_users 
-WHERE SU.id_users = 27 
+WHERE SU.id_users = 27
+ORDER BY S.time_service, S.city_service DESC,S.name_service ASC 
 LIMIT 1 
 
 

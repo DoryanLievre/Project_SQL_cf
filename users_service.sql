@@ -28,7 +28,7 @@ WHERE id_users = 1
 -- Récupération d'historique -- # STORY 16
 
 SELECT U.nickname as Suggest_user, U2.nickname as subscribe_user, S.name_service, S.postal_address_service, S.postal_code_service, S.city_service, S.time_service, S.complementary_info,
-(SELECT COUNT(id_service) FROM users_service WHERE id_users = 27) as TOTAL,
+(SELECT COUNT(id_service) FROM users_service WHERE id_users = 27) as TOTAL
 FROM service AS S 
 INNER JOIN users as U ON U.id = S.id_users
 LEFT JOIN users_service as SU ON SU.id_service = S.id 
