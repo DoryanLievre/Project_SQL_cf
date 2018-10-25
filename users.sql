@@ -31,7 +31,7 @@ INSERT INTO users(mail, pass, nickname, postal_address, postal_code, city, state
 	  	('takeda@coding.fr','Pass','Takeda','22 rue des choux','75000','Paris', 'France', '0678980310', '0123985674', ' 2018-10-25' );
 
  
--- Supprime un profil -- #Story 14
+-- Supprime un profil -- # STORY 14
 
 DELETE FROM users
 WHERE id = 15;
