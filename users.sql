@@ -31,13 +31,7 @@ INSERT INTO users(mail, pass, nickname, postal_address, postal_code, city, state
 	  	('takeda@coding.fr','Pass','Takeda','22 rue des choux','75000','Paris', 'France', '0678980310', '0123985674', ' 2018-10-25' );
 
 
--- FOREIGN KEY FOR USERS -- 
+-- Supprime uun profile --  # STORY 14 
 
-ALTER TABLE users
-ADD FOREIGN KEY users REFERENCES service ON DELETE CASCADE ON UPDATE CASCADE;
-ALTER TABLE users
-ADD FOREIGN KEY users REFERENCES users_service ON DELETE CASCADE ON UPDATE CASCADE;
-ALTER TABLE users
-ADD FOREIGN KEY users REFERENCES message  ON DELETE CASCADE ON UPDATE CASCADE;
- 
- 
+DELETE FROM users 
+WHERE id = 15; 
