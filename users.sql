@@ -30,8 +30,8 @@ INSERT INTO users(mail, pass, nickname, postal_address, postal_code, city, state
 	  	('shun-lee@coding.fr','Pass','Shun-Lee','22 rue des choux','75000','Paris', 'France', '0678980310', '0123985674', ' 2018-10-25' ),
 	  	('takeda@coding.fr','Pass','Takeda','22 rue des choux','75000','Paris', 'France', '0678980310', '0123985674', ' 2018-10-25' );
 
+ 
+-- Supprime un profil -- #Story 14
 
--- Supprime uun profile --  # STORY 14 
-
-DELETE FROM users 
-WHERE id = 15; 
+DELETE FROM users
+WHERE id = 15;
