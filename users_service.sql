@@ -23,4 +23,4 @@
 -- #STORY 13 --
 
 DELETE FROM users_service
-WHERE id_users=1
+WHERE id_users = 1 
