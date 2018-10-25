@@ -30,10 +30,14 @@ INSERT INTO users(mail, pass, nickname, postal_address, postal_code, city, state
 	  	('shun-lee@coding.fr','Pass','Shun-Lee','22 rue des choux','75000','Paris', 'France', '0678980310', '0123985674', ' 2018-10-25' ),
 	  	('takeda@coding.fr','Pass','Takeda','22 rue des choux','75000','Paris', 'France', '0678980310', '0123985674', ' 2018-10-25' );
 
+
+-- FOREIGN KEY FOR USERS -- 
+
 ALTER TABLE users
-ADD FOREIGN KEY users REFERENCES service 
+ADD FOREIGN KEY users REFERENCES service ON DELETE CASCADE ON UPDATE CASCADE;
 ALTER TABLE users
-ADD FOREIGN KEY users REFERENCES users_service
+ADD FOREIGN KEY users REFERENCES users_service ON DELETE CASCADE ON UPDATE CASCADE;
 ALTER TABLE users
-ADD FOREIGN KEY users REFERENCES message 
+ADD FOREIGN KEY users REFERENCES message  ON DELETE CASCADE ON UPDATE CASCADE;
+ 
  
