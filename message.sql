@@ -36,6 +36,7 @@ INSERT INTO message (id_expeditor, id_receiver, message_content, date_and_time) 
 	    (6,7, 'Oui, oui je connais cette théorie','2010-08-24 12:00:00');
 	   
 	    -- FOREIGN KEY For message -- 
+	   
 	    ALTER TABLE message
 	 	ADD FOREIGN KEY(id_expeditor) REFERENCES users(id) ON DELETE CASCADE ON UPDATE CASCADE ;
 	 	ALTER TABLE message
@@ -53,11 +54,19 @@ INSERT INTO message (id_expeditor, id_receiver, message_content, date_and_time) 
 
 	 	-- AFFICHAGE D'UNE conversation -- # STORY 9
 
-	 	SELECT * FROM message
+	 	SELECT * FROM message. 
 
 	 	WHERE (id_expeditor = 18 AND id_receiver = 27) OR (id_expeditor = 27 AND id_receiver = 18)
 
 	 	ORDER BY date_and_time ASC;
+
+
+	 	-- Supprime un message -- # STORY 15 
+
+	 	DELETE FROM message
+	 	WHERE id = 6;
+
+	 	
 
 
 
