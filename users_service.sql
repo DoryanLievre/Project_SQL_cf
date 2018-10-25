@@ -27,4 +27,23 @@ WHERE id_users = 1
 
 -- Récupération d'historique -- # STORY 16
 
+SELECT US.*, users.nickname, S.name_service, S.postal_address_service, S.postal_code_service, S.city_service, S.time_service, S.complementary_info,
+(SELECT COUNT(US.id)
+FROM users_service AS US 
+INNER JOIN users 
+ON US.id_users = users.id WHERE users.id = 27)
+AS TOTAL 
+FROM users_service AS US
+INNER JOIN users 
+ON users.id = US.id_users
+LEFT JOIN service AS S
+ON US.id_service = S.id 
+WHERE US.id_users = 27 
+ORDER BY S.time_service, S.city_service DESC,S.name_service ASC
+
+
+
+
+
+
 
