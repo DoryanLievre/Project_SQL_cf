@@ -24,3 +24,7 @@
 
 DELETE FROM users_service
 WHERE id_users = 1 
+
+-- Récupération d'historique -- # STORY 16
+
+
